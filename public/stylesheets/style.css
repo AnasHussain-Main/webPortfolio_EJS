@@ -61,7 +61,7 @@ and transition effect for smooth hover state */
     align-items: center;
     height:95vh;
     padding: 0 10%;
-    background-image: url(kawsNWF.png);
+    background-image: url('/images/kawsNWF.png');
     background-size: 48%;
     background-repeat: no-repeat;
     background-position: right;
