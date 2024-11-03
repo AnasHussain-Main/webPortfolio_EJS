@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Varela+Round&display=swap');
-/* Importing Google Fonts 'Quicksand' and 'Varela Round' for typography */
 
-*{
+/* Reset and Basic Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Resetting margin and padding for all elements to avoid default 
-spacing and setting box-sizing to border-box for consistent box models */
 
 body {
     background-color: #DCDCDC;
     color: black;
+    font-family: 'Quicksand', sans-serif;
 }
-/* Setting the background color and default text color for the entire body */
 
+/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -27,8 +26,6 @@ body {
     align-items: center;
     z-index: 100;
 }
-/* Styling the header: fixed position at the top, 
-full width, transparent background, and flexbox for aligning the content */
 
 .logo {
     font-size: 25px;
@@ -36,10 +33,9 @@ full width, transparent background, and flexbox for aligning the content */
     text-decoration: none;
     font-weight: 600;
 }
-/* Styling for the logo inside the header: larger font size, white color, bold font */
 
 .navbar a { 
-    font-family:'Varela Round', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 20px;
     color: black;
     text-decoration: none;
@@ -47,39 +43,34 @@ full width, transparent background, and flexbox for aligning the content */
     margin-left: 35px;
     transition: .4s;
 }
-/* Styling the navigation links: setting font, size, color, 
-and transition effect for smooth hover state */
 
 .navbar a:hover,
 .navbar a.active {
     color: red;
 }
-/* Changes the color to red on hover or when the link is active */
 
+/* Home Section */
 .home {
     display: flex;
     align-items: center;
-    height:95vh;
+    height: 95vh;
     padding: 0 10%;
-    background-image: url('/images/kawsNWF.png');
+    
     background-size: 48%;
     background-repeat: no-repeat;
     background-position: right;
 }
-/* Home section styling: flex layout with content aligned center 
-vertically, background image on the right */
 
-.home-content{ 
+.home-content {
     max-width: 700px;
     font-family: 'Varela Round', sans-serif;
 }
-/* Limiting the width of home content and applying a specific font family */
 
 .home-content h1 {
     font-size: 55px;
     font-weight: 700;
+    color: black;
 }
-/* Large bold heading for the home content */
 
 .home-content h2 {
     padding: 10px 0;
@@ -87,31 +78,17 @@ vertically, background image on the right */
     font-weight: 300;
     color: red;
 }
-/* Medium heading with red color and light font weight */
 
 .home-content h3 {
     padding: 5px 0;
     font-size: 30px;
     font-weight: 200;
 }
-/* Small heading with very light font weight */
-
-.home-content .btn-box {
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0;
-    width: 350px;
-    height: 50px;
-}
-/* Flexbox layout for buttons inside the home content 
-with some margin and fixed width/height */
 
 .btn-box a {
-    margin: 8px 0;
     color: red;
     width: 150px;
-    height: 100%;
+    height: 50px;
     background-color: transparent;
     border: 2px solid black;
     border-radius: 8px;
@@ -121,30 +98,30 @@ with some margin and fixed width/height */
     align-items: center;
     letter-spacing: 1px;
     font-weight: 600;
-}
-/* Styling the buttons: red text, transparent background, 
-solid border, rounded corners, and centered content */
-
-.btn-box a:hover{
-    color: black;
+    margin: 8px;
     transition: .3s;
 }
-/* Button hover effect: change color to black with a transition for smoothness */
 
-footer{
-    font-family:'Varela Round', sans-serif;
-    text-align: center;
-    padding: 10px 0;
+.btn-box a:hover {
     color: black;
 }
-/* Basic footer styling: centered text and padding */
 
-/*------------------------------------------------*/
+/* Footer */
+footer {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding to control height */
+    color: black;
+    background-color: #f8f9fa; /* Light gray to blend with the layout */
+    font-size: 0.9em; /* Adjust font size if needed */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
-/*About Me Page*/
-
+/* About Me Page */
 .basket {
-    font-family:'Varela Round', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     background: linear-gradient(90deg, #020024, #090979, #00d4ff);
     color: black;
     display: flex;
@@ -153,30 +130,18 @@ footer{
     height: 170vh;
     margin: 0;
 }
-/* Basket section with a linear gradient background, flexbox for centering content,
- and extra height */
 
-.eggs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-/* Flex column layout for the 'eggs' div with centered text */
-
-.eggs h1{
+.eggs h1 {
     padding-top: 10px;
     font-size: 30px;
     color: #ff6b6b;
 }
-/* First heading inside eggs with padding and light red color */
 
 .eggs h2 {
     font-size: 60px;
     color: #45cea2;
     font-weight: 400;
 }
-/* Second heading with larger font size and greenish color */
 
 .eggs p {
     color: red;
@@ -184,45 +149,19 @@ footer{
     font-size: 23px;
     font-weight: 400;
 }
-/* Paragraph inside eggs with red text and medium font size */
 
-.eggs video{
-    padding-top: 20px;
-    width: 60%;
-}
-/* Video styling: adds padding and sets width to 60% of the container */
-
-.eggs img{
+.eggs img {
     border-radius: 100%;
     width: 230px;
-    padding: 10px 0 0;
+    padding-top: 10px;
 }
-/* Circular image styling with rounded borders and fixed width */
 
-/*------------------------------------------------*/
-
-
-/*-----MY Projects Page-----*/
-
+/* My Projects Page */
 .three {
     font-family: 'Quicksand', sans-serif;
     color: whitesmoke;
     padding: 0 20px;
 }
-/* Main project section styling with Quicksand font, white text, and padding */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-/* Container with max-width to center content and provide structure */
-
-h1 {
-    color: #090979;
-    text-align: center;
-    margin-top: 50px;
-}
-/* Main heading for the project page: blue color and centered */
 
 .project {
     background-color: red;
@@ -231,118 +170,62 @@ h1 {
     border-radius: 8px;
     transition: transform 0.3s;
 }
-/* Each project box: red background, padding, margin, 
-rounded corners, and a hover effect for scaling */
 
 .project:hover {
     transform: scale(1.05);
 }
-/* Hover effect for the project boxes: slight scaling for a pop-out effect */
 
-h2 {
-    margin: 0 0 10px;
-}
-/* Project title with margin adjustments */
-
-p {
-    margin: 5px 10px;
-}
-/* Paragraph styling for the project description with margins */
-
-/*------------------------------------------------*/
-
-/*-----Contact Page-----*/
-
-.container{
-    font-family: 'Quicksand', sans-serif;
-    width: 80%;
-    margin: 100px auto;
-}
-/* Contact form container: Quicksand font, 80% width, centered with margins */
-
-.contact-box{
+/* Contact Page */
+.contact-box {
     color: black;
     background-color: white;
 }
-/* Contact box with black text on a white background */
 
-.main-contact{
-    padding: 40px 60px;
-    flex-basis: 40%;
-}
-/* Padding for the main contact section */
-
-.main-contact h3{
+.main-contact h3 {
     padding-bottom: 15px;
 }
-/* Padding for the contact section heading */
 
 .container h1 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     color: red;
     font-weight: 700;
 }
-/* Main heading for the contact section: red color and bold font */
 
-.container p{
+.container p {
     padding-bottom: 40px;
     font-size: 20px;
     font-weight: 500;
 }
-/* Contact description paragraph: padding, larger font size, and medium weight */
 
-.input-r{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-/* Flexbox layout for input fields: displayed in a row and spaced out */
-
-input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    padding-bottom: 5px;
-}
-/* Input field styling: full width, bottom border, no outline, and padding */
-
-textarea {
-    width: 100%;
-    border: 1px solid black;
-    padding: 10px;
-    outline: none;
-    box-sizing: border-box;
-}
-/* Textarea for the message: full width, border, and padding */
-
-label{
+label {
     display: block;
     color: red;
     margin-bottom: 8px;
 }
-/* Label styling: red color, block display, and margin */
 
-button{
-    background-color: red;
-    width: 100px;
-    border: none;
+/* Form Inputs */
+input, textarea {
+    width: 100%;
+    border: 1px solid black;
     outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: red;
     color: white;
+    border: none;
+    border-radius: 35px;
     height: 35px;
     margin-top: 15px;
-    border-radius: 35px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
-/* Button styling: red background, white text, no borders, r
-ounded corners, and shadow for depth */
 
-.end{
+.end {
     height: 40vh;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-end;
 }
-/* Footer section: height defined, flexbox for aligning content at the bottom */
+
