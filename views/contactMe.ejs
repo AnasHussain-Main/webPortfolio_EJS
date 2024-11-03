@@ -1,60 +1,54 @@
-
-  <!-- Main container for the contact form -->
-<div class="container">
+<!-- Main container for the contact form -->
+<div class="container my-5">
     <!-- Main heading for the contact section -->
-    <h1>Contact Me</h1>
-    <!-- Brief paragraph introducing the contact form -->
-    <p>If you have questions or concerns about being my friend, please feel free to message me!</p>
+    <h1 class="text-center mb-4 text-primary">Contact Me</h1>
+    <p class="text-center">If you have questions or concerns about being my friend, please feel free to message me!</p>
     
     <!-- Contact box to contain the form -->
-    <div class="contact-box">
+    <div class="contact-box p-4 bg-light rounded shadow">
         <!-- Main contact form section -->
         <div class="main-contact">
-            <!-- Heading for the form -->
-            <h3>Send Your Request</h3>
+            <h3 class="text-center mb-4">Send Your Request</h3>
 
             <!-- Contact form with input fields for user inquiries -->
             <form>
-                <!-- Input row containing all form input fields -->
-                <div class="input-r">
+                <div class="row mb-3">
                     <!-- Input group for full name -->
-                    <div class="input-g">
-                        <label>Full Name, or Not</label>
-                        <!-- Input field for user's full name -->
-                        <input type="text" placeholder="Anas Hussain">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Full Name, or Not</label>
+                        <input type="text" class="form-control" id="name" placeholder="Anas Hussain">
                     </div>
 
                     <!-- Input group for email -->
-                    <div class="input-g">
-                        <label>Email</label>
-                        <!-- Input field for user's email address -->
-                        <input type="text" placeholder="Anas.Hussain@lol.com">
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Anas.Hussain@lol.com">
                     </div>
 
                     <!-- Input group for phone number -->
-                    <div class="input-g">
-                        <label>Phone</label>
-                        <!-- Input field for user's phone number -->
-                        <input type="text" placeholder="(416)-782-9024">
+                    <div class="col-md-6 mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="(416)-782-9024">
                     </div>
 
                     <!-- Input group for subject of the inquiry -->
-                    <div class="input-g">
-                        <label>Subject</label>
-                        <!-- Input field for the subject of the message -->
-                        <input type="text" placeholder="Inquiry...">
+                    <div class="col-md-6 mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Inquiry...">
                     </div>
                 </div>
 
                 <!-- Label and textarea for the user's message -->
-                <label>Message</label>
-                <!-- Textarea field for the user's detailed message -->
-                <textarea rows="10" placeholder="Don't shoot the messenger..."></textarea>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Don't shoot the messenger..."></textarea>
+                </div>
 
                 <!-- Submit button to send the form -->
-                <button type="submit">SEND</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary mt-3">SEND</button>
+                </div>
             </form>
         </div>
     </div>
 </div>
-
