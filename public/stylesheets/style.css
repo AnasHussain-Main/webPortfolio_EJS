@@ -55,7 +55,6 @@ body {
     align-items: center;
     height: 95vh;
     padding: 0 10%;
-    
     background-size: 48%;
     background-repeat: no-repeat;
     background-position: right;
@@ -87,7 +86,7 @@ body {
 
 .btn-box a {
     color: red;
-    width: 150px;
+    width: 500px;
     height: 50px;
     background-color: transparent;
     border: 2px solid black;
@@ -108,14 +107,12 @@ body {
 
 /* Footer */
 footer {
+    height: 6vh;
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    padding: 10px 0; /* Adjust padding to control height */
+    padding: 10px 5px; 
     color: black;
-    background-color: #f8f9fa; /* Light gray to blend with the layout */
-    font-size: 0.9em; /* Adjust font size if needed */
-    position: relative;
-    bottom: 0;
+    font-size: 0.9em; 
     width: 100%;
 }
 
@@ -124,10 +121,7 @@ footer {
     font-family: 'Varela Round', sans-serif;
     background: linear-gradient(90deg, #020024, #090979, #00d4ff);
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 170vh;
+    height: 180vh;
     margin: 0;
 }
 
@@ -152,19 +146,25 @@ footer {
 
 .eggs img {
     border-radius: 100%;
-    width: 230px;
-    padding-top: 10px;
+    width: 500px;
+    padding-top: 10px 0 0 0;
 }
 
 /* My Projects Page */
 .three {
     font-family: 'Quicksand', sans-serif;
-    color: whitesmoke;
     padding: 0 20px;
+    color: aliceblue;
+}
+.container h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .project {
-    background-color: red;
+    border: #00d4ff;
+    background-color: rgb(211, 0, 0);
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
@@ -228,4 +228,3 @@ button {
     justify-content: center;
     align-items: flex-end;
 }
-
