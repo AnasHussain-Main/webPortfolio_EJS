@@ -1,10 +1,9 @@
-const createError = require('http-errors');
-const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
-const expressLayouts = require('express-ejs-layouts'); // Import express-ejs-layouts
-
+const createError = require('http-errors'); // Handle HTTP Errors
+const express = require('express'); //Imports Express framework 
+const path = require('path'); // Path utilizes module 
+const cookieParser = require('cookie-parser'); // Parse Cookie Middleware 
+const logger = require('morgan'); //HTTP request logger
+const expressLayouts = require('express-ejs-layouts'); // Imported express-ejs-layout
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
@@ -16,7 +15,8 @@ app.set('view engine', 'ejs');
 
 // Set up express-ejs-layouts
 app.use(expressLayouts);
-app.set('layout', 'layout');  // This sets 'layout.ejs' as the default layout for all views
+app.set('layout', 'layout');  
+// This commaned sets 'layout.ejs' as the default layout for all views
 
 app.use(logger('dev'));
 app.use(express.json());
